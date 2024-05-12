@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .bg-countdown {
-    background-image: url('/public/images/bg.jpg');
+    background-image: url('/public/images/bg-3.jpg');
     background-size: cover;
     background-position: center;
   }
