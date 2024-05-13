@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-countdown text-white font-montserrat">
-      <img src="/images/logo.png" alt="Cimritur Logo" className="absolute top-0 left-0 m-4 w-32 opacity-75" />
+      <img src="/images/logo.png" alt="Cimritur Logo" className="absolute top-0 left-0 m-4 w-40 opacity-75" />
       <div className="text-center">
         <h1 className="text-6xl font-semibold mb-4">Buluşmamıza Az Kaldı</h1>
         <div className="grid grid-cols-4 gap-4">
