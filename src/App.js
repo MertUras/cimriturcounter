@@ -13,7 +13,7 @@ function App() {
     }
   };
 
-  const [endDate] = useState(getEndDate());
+  const [endDate, setEndDate] = useState(null);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -22,6 +22,13 @@ function App() {
   });
 
   useEffect(() => {
+    // Set endDate on client side
+    setEndDate(getEndDate());
+  }, []);
+
+  useEffect(() => {
+    if (!endDate) return;
+
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = endDate - now;
